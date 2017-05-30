@@ -8,18 +8,24 @@
  * and add all directories and files automatically to a new
  * repository.
  *
+ * Update: Now creates the repo for you.
+ *
  * @cmdline args:
  *    argv[0]: <gitinit path>
  *    argv[1]: <Name of Repo>
  * 
  * Author: Trevor Riddle
  * Creation Date: May 30, 2017
- * Update: NULL
+ * Update: May 30, 2017 7:03pm
  */
 int main(int argc, char ** argv) {
   char buf[100];
   char buf1[100];
+  char buf2[100];
 
+  snprintf(buf2, 100, "curl -u riddletd https://api.github.com/user/repos -d \'{ \"name\": \"%s\" }\'", argv[1]);
+  system(buf2);
+  
   snprintf(buf, 100, "echo \"# %s\" >> README.md", argv[1]);
   system(buf);
   
