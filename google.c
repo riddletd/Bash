@@ -3,6 +3,11 @@
 
 #define KB 1024
 
+/**
+ * A script to google search something.
+ * 
+ * Warning: Make sure to source the search text with ''.
+ */
 int main(int arc, char ** argv) {
   char buf[KB];
 
