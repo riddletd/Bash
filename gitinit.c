@@ -7,6 +7,10 @@
  * argument. This script will be used to initialize a git repository
  * and add all directories and files automatically to a new
  * repository.
+ *
+ * @cmdline args:
+ *    argv[0]: gitinit
+ *    argv[1]: <Name of Repo>
  * 
  * Author: Trevor Riddle
  * Creation Date: May 30, 2017
