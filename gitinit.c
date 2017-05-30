@@ -9,7 +9,7 @@
  * repository.
  *
  * @cmdline args:
- *    argv[0]: gitinit
+ *    argv[0]: <gitinit path>
  *    argv[1]: <Name of Repo>
  * 
  * Author: Trevor Riddle
