@@ -31,5 +31,10 @@ int main(int argc, char ** argv) {
   system(buf1);
   
   system("git push -u origin master");
+  
+  /*
+   * "gitput" is my .bash_profile alias for git.sh. You can find this
+   * file in my Bash repo.
+   */
   system("gitput");
 }
